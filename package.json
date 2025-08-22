@@ -6,14 +6,15 @@
     "packages/*"
   ],
   "scripts": {
-    "dev": "bun run dev:backend & bun run dev:frontend",
+    "dev": "npm run dev:backend & npm run dev:frontend",
     "dev:backend": "cd packages/backend && uv run uvicorn main:app --reload --host 0.0.0.0 --port 3000",
-    "dev:frontend": "cd packages/frontend && bun run dev",
-    "build": "bun run build:backend && bun run build:frontend",
+    "dev:frontend": "cd packages/frontend && npm run dev",
+    "build": "npm run build:backend && npm run build:frontend",
     "build:backend": "cd packages/backend && uv run uvicorn main:app --host 0.0.0.0 --port 3000",
-    "build:frontend": "cd packages/frontend && bun run build"
+    "build:frontend": "cd packages/frontend && npm run build"
   },
   "devDependencies": {
     "@types/bun": "latest"
-  }
+  },
+  "dependencies": {}
 }
