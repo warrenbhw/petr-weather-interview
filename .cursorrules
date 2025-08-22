@@ -1,0 +1,22 @@
+We're building an AI application that allows a user to ask about the weather at their location
+and get recommendations on how to prepare for the day.
+
+We're going to use Weather APIs, such as the National Weather Service weather API
+https://api.weather.gov/
+
+Our stack is:
+
+- React
+- Vite
+- bun
+- tailwindCSS
+- Vercel AI SDK
+- Hono on the backend
+
+Our backend lives in the packages/backend directory, and our frontend will live in the packages/frontend directory.
+
+Coding conventions:
+
+- All TypeScript/TSX files should use kebab-case naming (e.g., weather-display.tsx, use-weather.ts)
+- Components should still be exported with PascalCase names
+- Use prettier-standard for code formatting
